@@ -5,9 +5,9 @@
 */
 
 $org_name           = '{{ org_name }}';
-$org_site           = '{{ org_site }}';
+$org_site           = '{{ ansible_fqdn }}';
 
-$dbusername         = '{{ us3_db_username }}';  # the name of the MySQL user
+$dbusername         = '{{ us3_db_user }}';  # the name of the MySQL user
 $dbpasswd           = '{{ us3_db_pass }}';  # the password for the MySQL user
 $dbname             = '{{ us3_db_name }}';  # the name of the database
 $dbhost             = '{{ us3_db_host }}'; # the host on which MySQL runs, generally localhost
